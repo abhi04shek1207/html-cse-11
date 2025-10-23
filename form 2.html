@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking Form</title>
+</head>
+<body style="font-family: Arial; background-color: #f8f9fa;">
+
+    <h2 style="text-align: center;">Hotel Room Booking Form</h2>
+
+    <form style="width: 400px; margin: auto; border: 2px solid black; padding: 20px; border-radius: 10px; background-color: #fff;">
+        <table cellpadding="8" cellspacing="0" style="width:100%;">
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="checkin">Check-in Date:</label></td>
+                <td><input type="date" id="checkin" name="checkin" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="checkout">Check-out Date:</label></td>
+                <td><input type="date" id="checkout" name="checkout" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="room">Number of Bed:</label></td>
+                <td>
+                    <select id="room" name="room">
+                        <option>no of bed</option>
+                        <option>Single</option>
+                        <option>Double</option>
+                        <option>triple</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="guests">Number of members:</label></td>
+                <td><input type="number" id="guests" name="guests" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <Label for="room">Room Type</Label>
+                    <select name="room" id="room">
+                        <option>Room Type</option>
+                        <option>AC</option>
+                        <option>NON AC</option>
+                    </select>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Book Now">
+                    <input type="reset" value="Reset Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
